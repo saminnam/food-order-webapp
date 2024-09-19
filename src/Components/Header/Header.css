@@ -1,0 +1,75 @@
+.header
+{
+    height: 34vw;
+    margin: 30px auto;
+    background-image: url('https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg?cs=srgb&dl=pexels-ella-olsson-572949-1640773.jpg&fm=jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.header_content
+{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 10%;
+    left: 6vw;
+    animation: fadeIn 3s;
+}
+
+.header_content h2
+{
+    font-weight: 500;
+    color: #1e27a0;
+    font-size: max(4.5vw,22px);
+}
+
+.header_content p
+{
+    color: #010e01b6;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.header_content button 
+{
+    border: none;
+    color: #747474;
+    font-weight: 500;
+    padding: 1vw 2.3vw;
+    background-color: #efeded;
+    font-size: max(1vw,13px);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.header_content button:hover
+{
+    background-color: #fff;
+    color: #000;
+}
+
+
+@media (max-width:1050px) {
+    .header_content {
+        max-width: 75%;
+    }
+}
+
+@media (max-width:750px) {
+    .header_content {
+        max-width: 65%;
+    }
+    .header_content p {
+        display: none;
+    }
+    .header_content button {
+        padding: 2vw 4vw;
+    }
+}
+
